@@ -4,6 +4,13 @@
   "newProjectRoot": "projects",
   "projects": {
     "app-number-one": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "pt-BR": "src/locale/app-number-one/messages.pt.json",
+          "ko-KR": "src/locale/app-number-one/messages.ko.json"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,6 +24,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "pt-BR",
+              "ko-KR"
+            ],
             "outputPath": "dist/app-number-one",
             "index": "projects/app-number-one/src/index.html",
             "main": "projects/app-number-one/src/main.ts",
@@ -28,7 +39,7 @@
               "projects/app-number-one/src/assets"
             ],
             "styles": [
-              "projects/app-number-one/src/styles.scss"
+              "projects/app-number-one/src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -61,6 +72,21 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en-US": {
+              "localize": [
+                "en-US"
+              ]
+            },
+            "pt-BR": {
+              "localize": [
+                "pt-BR"
+              ]
+            },
+            "ko-KR": {
+              "localize": [
+                "ko-KR"
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -73,6 +99,15 @@
             },
             "development": {
               "browserTarget": "app-number-one:build:development"
+            },
+            "en-US": {
+              "browserTarget": "app-number-one:build:en-US"
+            },
+            "pt-BR": {
+              "browserTarget": "app-number-one:build:pt-BR"
+            },
+            "ko-KR": {
+              "browserTarget": "app-number-one:build:ko-KR"
             }
           },
           "defaultConfiguration": "development"
@@ -96,7 +131,7 @@
               "projects/app-number-one/src/assets"
             ],
             "styles": [
-              "projects/app-number-one/src/styles.scss"
+              "projects/app-number-one/src/styles/styles.scss"
             ],
             "scripts": []
           }
@@ -104,6 +139,13 @@
       }
     },
     "app-number-two": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "pt-BR": "src/locale/app-number-two/messages.pt.json",
+          "ko-KR": "src/locale/app-number-two/messages.ko.json"
+        }
+      },
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -117,6 +159,10 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "localize": [
+              "pt-BR",
+              "ko-KR"
+            ],
             "outputPath": "dist/app-number-two",
             "index": "projects/app-number-two/src/index.html",
             "main": "projects/app-number-two/src/main.ts",
@@ -128,7 +174,7 @@
               "projects/app-number-two/src/assets"
             ],
             "styles": [
-              "projects/app-number-two/src/styles.scss"
+              "projects/app-number-two/src/styles/styles.scss"
             ],
             "scripts": []
           },
@@ -161,6 +207,21 @@
               "extractLicenses": false,
               "sourceMap": true,
               "namedChunks": true
+            },
+            "en-US": {
+              "localize": [
+                "en-US"
+              ]
+            },
+            "pt-BR": {
+              "localize": [
+                "pt-BR"
+              ]
+            },
+            "ko-KR": {
+              "localize": [
+                "ko-KR"
+              ]
             }
           },
           "defaultConfiguration": "production"
@@ -173,6 +234,15 @@
             },
             "development": {
               "browserTarget": "app-number-two:build:development"
+            },
+            "en-US": {
+              "browserTarget": "app-number-two:build:en-US"
+            },
+            "pt-BR": {
+              "browserTarget": "app-number-two:build:pt-BR"
+            },
+            "ko-KR": {
+              "browserTarget": "app-number-two:build:ko-KR"
             }
           },
           "defaultConfiguration": "development"
@@ -196,7 +266,7 @@
               "projects/app-number-two/src/assets"
             ],
             "styles": [
-              "projects/app-number-two/src/styles.scss"
+              "projects/app-number-two/src/styles/styles.scss"
             ],
             "scripts": []
           }
