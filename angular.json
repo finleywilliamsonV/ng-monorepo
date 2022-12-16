@@ -274,6 +274,13 @@
       }
     },
     "shared-components": {
+      "i18n": {
+        "sourceLocale": "en-US",
+        "locales": {
+          "pt-BR": "src/locale/shared-components/messages.pt.json",
+          "ko-KR": "src/locale/shared-components/messages.ko.json"
+        }
+      },
       "projectType": "library",
       "root": "projects/shared-components",
       "sourceRoot": "projects/shared-components/src",

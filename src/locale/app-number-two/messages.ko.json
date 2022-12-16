@@ -33,6 +33,8 @@
     "ngb.timepicker.decrement-seconds": "Decrement seconds",
     "ngb.timepicker.PM": "{$INTERPOLATION}",
     "ngb.timepicker.AM": "{$INTERPOLATION}",
-    "app-component-title-two": " 저는 2번 앱입니다! "
+    "app-component-title-two": "저는 2번 앱입니다!",
+    "shared-button-text": "나는 공유 버튼입니다 (app 2)",
+    "shared-button-label": "그리고 나는 공유 레이블입니다 (app 2)"
   }
 }

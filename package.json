@@ -10,14 +10,16 @@
     "start-one": "ng serve --project=app-number-one --configuration=en-US",
     "start-one:pt-BR": "ng serve --project=app-number-one --configuration=pt-BR",
     "start-one:ko-KR": "ng serve --project=app-number-one --configuration=ko-KR",
+    "extract-locales-one": "ng extract-i18n --project=app-number-one --format=json --output-path src/locale/app-number-one",
     "build-two": "ng build --project=app-number-two --localize",
     "watch-two": "ng build --project=app-number-two --localize --watch --configuration development",
     "test-two": "ng test --project=app-number-two",
     "start-two": "ng serve --project=app-number-two --configuration=en-US",
     "start-two:pt-BR": "ng serve --project=app-number-two --configuration=pt-BR",
     "start-two:ko-KR": "ng serve --project=app-number-two --configuration=ko-KR",
-    "extract-locales-one": "ng extract-i18n --project=app-number-one --format=json --output-path src/locale/app-number-one",
-    "extract-locales-two": "ng extract-i18n --project=app-number-two --format=json --output-path src/locale/app-number-two"
+    "extract-locales-two": "ng extract-i18n --project=app-number-two --format=json --output-path src/locale/app-number-two",
+    "extract-all-locales": "npm run extract-locales-one && npm run extract-locales-two",
+    "build-all": "npm run build-one && npm run build-two"
   },
   "private": true,
   "dependencies": {
